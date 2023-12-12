@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <!--============================ REMIXICON ============================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--============================ FAVICON ============================-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!--============================ MY CSS ============================-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css-page/header&Nav.css">
+    <link rel="stylesheet" href="css/css-page/home.css">
+    <link rel="stylesheet" href="css/css-page/about.css">
+    <link rel="stylesheet" href="css/css-page/services.css">
+    <link rel="stylesheet" href="css/css-page/projects.css">
+    <link rel="stylesheet" href="css/css-page/contact.css">
+    <link rel="stylesheet" href="css/css-page/footer.css">
+</head>
+<body>
+    <!--==================================== HEADER ====================================-->
+    <header class="header" id="header">
+       <nav class="nav container">
+           <a href="##" class="navLogo">
+                <span class="navLogo-circle">A</span>
+                <span class="navLogo-name ">Albert</span>
+           </a>
+           <div class="navMenu" id="nav-menu">
+               <span class="navTitle">Menu</span>
+               <h3 class="navName">Albert</h3>
+               <ul class="navList">
+                   <li class="navItem">
+                       <a href="#home" class="navLink activeLink">Home</a>
+                   </li>
+                   <li class="navItem">
+                       <a href="#about" class="navLink">About Me</a>
+                   </li>
+                   <li class="navItem">
+                       <a href="#projects" class="navLink">Projects</a>
+                   </li>
+                   <li class="navItem">
+                       <a href="#contact" class="navLink navLinkButton">Contact Me</a>
+                   </li>
+               </ul>
+               <!-- Close button-->
+               <div class="navClose" id="nav-close">
+                   <i class="fa-solid fa-xmark"></i>
+               </div>
+           </div>
+           <div class="navButtons">
+               <!-- Theme button -->
+               <i class="ri-moon-line changeTheme" id="theme-button"></i>
+
+               <!-- Toggle button-->
+               <div class="navToggle" id="nav-toggle">
+                   <i class="fa-solid fa-bars-staggered"></i>
+               </div>
+           </div>
+       </nav> 
+    </header>
+
+    <!--==================================== Main ====================================-->
+    <main class="main">
+        <!--===================== HOME =====================-->
+        <section class="home section" id="home">
+           <div class="homeContainer container grid">
+               <h1 class="homeName">Albert</h1>
+
+               <div class="homePerfil">
+
+                   <div class="homeImage">
+                       <img src="img/home-perfil.jpg" alt="image" class="homeImg" >
+                       <div class="homeShadow"></div>
+
+                       <img src="img/curved-arrow.svg" alt="image" class="homeArrow">
+                       <img src="img/random-lines.svg" alt="image" class="homeLine">
+
+                       <div class="geometric-box"></div>
+                       
+                       <div class="homeSocial">
+                           <a href="##" target="_blank" class="homeSocialLink">
+                               <i class="fa-brands fa-instagram"></i>
+                           </a>
+                           <a href="##" target="_blank" class="homeSocialLink">
+                               <i class="fa-brands fa-linkedin"></i>
+                           </a>
+                           <a href="##" target="_blank" class="homeSocialLink">
+                               <i class="fa-brands fa-github"></i>
+                           </a>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="homeInfo">
+                   <p class="homeDescription">
+                       <b>Full Stack Developer</b>, with knowledge in git,
+                       I ofter the best projects resulting in quality work.
+                   </p>
+                   <a href="#about" class="homeScroll">
+                       <div class="homeScrollBox">
+                           <i class="fa-solid fa-chevron-down"></i>
+                       </div>
+                       <span class="homeScrollText">Scroll Down</span>
+                   </a>
+               </div>
+           </div>
+        </section>
+        <!--===================== ABOUT =====================-->
+        <section class="about section" id="about">
+            <div class="aboutContainer container grid"> 
+                <h2 class="section__title-2">
+                    <span>About Me.</span>
+                </h2>
+                <div class="aboutPerfil">
+                    <div class="aboutImage"> 
+                         <img src="img/about-perfil.jpg" alt="image" class="aboutImg">
+
+                         <div class="aboutShadow"></div>
+
+                         <div class="geometric-box"></div>
+                         <img src="img/random-lines.svg" alt="image" class="aboutLine">
+                         <div class="aboutBox"></div>
+                    </div>
+                </div>
+
+                <div class="aboutInfo">
+                    <p class="aboutDescription">Lorem ipsum dolor sit amet consectetur <b>adipisicing elit </b>. Sed, suscipit?</p>
+                    <ul class="aboutList">
+                        <li class="aboutItem">
+                             <b>My Skills Are: </b> HTML, CSS, JavaScript, 
+                             React, PHP, Laravel, Git & GitHub, Boostrap, Figma
+                        </li>
+                    </ul>
+                    <div class="aboutButtons">
+                         <a href="#contact" class="button">
+                            <i class="fa-regular fa-paper-plane"></i> Contact Me
+                         </a>
+                         <a href="##" target="_blank"  class="buttonGhost">
+                            <i class="fa-brands fa-linkedin"></i>
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--===================== SERVICES =====================-->
+        <section class="services section" id="services">
+             <h2 class="section__title-2">
+                <span>Services.</span>
+             </h2>
+             <div class="servicesContainer container grid">
+                 <article class="servicesCard">
+                   <div class="servicesBorder"></div>
+                   <div class="servicesContent">
+                      <div class="servicesIcon">
+                        <div class="servicesBox"></div>
+                        <i class="fa-solid fa-layer-group"></i>
+                      </div>
+                      <h2 class="servicesTitle">Figma</h2>
+                      <p class="servicesDescription">I create web site in figma</p>
+                   </div>
+                 </article>
+                 <article class="servicesCard">
+                    <div class="servicesBorder"></div>
+                    <div class="servicesContent">
+                       <div class="servicesIcon">
+                         <div class="servicesBox"></div>
+                         <i class="fa-solid fa-code"></i>
+                       </div>
+                       <h2 class="servicesTitle">Programer</h2>
+                       <p class="servicesDescription">I can make web site Frondend and Backaend</p>
+                    </div>
+                 </article>
+                 <article class="servicesCard">
+                    <div class="servicesBorder"></div>
+                    <div class="servicesContent">
+                       <div class="servicesIcon">
+                         <div class="servicesBox"></div>
+                         <i class="fa-solid fa-code"></i>
+                       </div>
+                       <h2 class="servicesTitle">Programer</h2>
+                       <p class="servicesDescription">I can make web site Frondend and Backaend</p>
+                    </div>
+                 </article>
+             </div>
+        </section>
+        <!--===================== PROJECTS =====================-->
+        <section class="projects section" id="projects">
+             <h2 class="section__title-1">
+                <span>Projects.</span>
+             </h2>
+             <div class="projectsContainer container grid">
+                 <article class="projectsCard">
+                   <div class="projectImage">
+                       <img src="img/project-1.jpg" alt="image" class="projectImg">
+
+                       <a href="## " class="projectsButton button">
+                          <i class="ri-arrow-right-up-line"></i>
+                       </a>
+                   </div>
+                   <div class="projectsContent">
+                        <h3 class="projectsSubtitle">Web site</h3>
+                        <h2 class="projectsTitle">Fast Food</h2>
+
+                        <p class="projectsDescription">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, reprehenderit.
+                        </p>
+                   </div>
+                   <div class="projectsButtons">
+                        <a href="##" target="_blank"  class="projectsLink">
+                            <i class="ri-github-line"></i>  View
+                        </a>                       
+                        <a href="" target="_blank"  class="projectsLink">
+                            <i class="ri-dribbble-line"></i>   View
+                        </a>
+                   </div>
+                 </article>          
+                 <article class="projectsCard">
+                    <div class="projectImage">
+                        <img src="img/project-2.jpg" alt="image" class="projectImg">
+ 
+                        <a href="## " class="projectsButton button">
+                           <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>                    
+                    <div class="projectsContent">
+                         <h3 class="projectsSubtitle">Web site</h3>
+                         <h2 class="projectsTitle">MVC-framework</h2>
+ 
+                         <p class="projectsDescription">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, reprehenderit.
+                         </p>
+                    </div> 
+                    <div class="projectsButtons">
+                         <a href="##" target="_blank"  class="projectsLink">
+                             <i class="ri-github-line"></i> View
+                         </a>
+                         <a href="" target="_blank"  class="projectsLink">
+                             <i class="ri-dribbble-line"></i>  View
+                         </a>
+                    </div>
+                 </article>
+                 <article class="projectsCard">
+                    <div class="projectImage">
+                        <img src="img/project-3.jpg" alt="image" class="projectImg">
+ 
+                        <a href="## " class="projectsButton button">
+                         <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>                    
+                    <div class="projectsContent">
+                         <h3 class="projectsSubtitle">Web site</h3>
+                         <h2 class="projectsTitle">Coffe house</h2>
+ 
+                         <p class="projectsDescription">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, reprehenderit.
+                         </p>
+                    </div> 
+                    <div class="projectsButtons">
+                         <a href="##" target="_blank"  class="projectsLink">
+                             <i class="ri-github-line"></i> View
+                         </a>                
+                         <a href="" target="_blank"  class="projectsLink">
+                             <i class="ri-dribbble-line"></i> View
+                         </a>
+                    </div>
+                 </article>
+             </div>
+        </section>
+        <!--===================== CONTACT =====================-->
+        <section class="contact section" id="contact">
+            <div class="contactContainer grid">
+                <div class="contactData">
+                    <div class="geometric-box"></div>
+                    <h2 class="section__title-2">
+                        <span>Contact Me.</span>
+                    </h2>
+                    <p class="contactDescription1">Lorem ipsum dolor sit amet <b>consectetur, adipisicing elit.</b> Commodi repudiandae dignissimos repellat officia ea aliquid?</p>
+                    <p class="contactDescription2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <b>Alias</b> officiis reprehenderit rem corporis, aperiam neque.</p>
+                </div>
+                <div class="contactMail">
+                   <h2 class="contactTitle">
+                      Send A Message
+                   </h2>
+
+                   <form action="" class="contactForm" id="contactForm">
+                        <div class="contactGroup">
+                          <div class="contactBox">
+                             <input type="text" name="userName" class="contactInput" id="name" required placeholder="First Name">
+                             <label for="name" class="contactLabel">First Name</label>
+                          </div>
+
+                          <div class="contactBox">
+                             <input type="email" name="userEmail" class="contactInput" id="subject" required placeholder="Email Address">
+                             <label for="subject" class="contactLabel">Email Address</label>
+                          </div>
+                        </div>
+
+                          <div class="contactBox">
+                             <input type="text" name="userSubject" class="contactInput" id="name" required placeholder="Subject">
+                             <label for="name" class="contactLabel">Subject</label>
+                          </div>
+
+                          <div class="contactBox contactArea">
+                             <textarea name="userMessage" id="message" class="contactInput" required placeholder="Message"></textarea>
+                             <label for="message" class="contactLabel">Message</label>
+                          </div>
+                  
+                      
+                      <p class="contactMessage" id="contactMessage"></p>
+                      <button type="submit" class="contactButton button">
+                        <i class="ri-send-plane-line"></i> Send Message
+                      </button>
+                   </form>
+                </div>
+
+                <div class="contactSocial">
+                    <img src="img/curved-arrow.svg" alt="" class="contactSocialArrow">
+
+                    <div class="contactSocialData">
+                       <div>
+                          <p class="contactSocialDescription1">
+                            Does not send emails
+                          </p>
+                          <p class="contactSocialDescription2">
+                             Write me on my social networks
+                          </p>
+                       </div>
+                       <div class="contactSocialLinks">
+                          <a href="##" target="_blank" class="contactSocialLink">
+                            <i class="ri-facebook-circle-line"></i>
+                          </a>
+                          <a href="##" target="_blank" class="contactSocialLink">
+                            <i class="ri-instagram-line"></i>
+                          </a>
+                          <a href="##" target="_blank" class="contactSocialLink">
+                            <i class="ri-linkedin-box-line"></i>
+                          </a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--==================================== FOOTER ====================================-->
+    <footer class="footer" id="footer">
+        <div class="footerContainer container grid">
+            <ul class="footerLinks">
+               <li>
+                  <a href="#about" class="footerLink">About</a>
+               </li>
+               <li>
+                  <a href="#services" class="footerLink">Services</a>
+               </li>
+               <li>
+                  <a href="#projects" class="footerLink">Projects</a>
+               </li>
+            </ul>
+            <span class="footerCopy">
+              &#169; All Rights Reserved By
+                <b>Albert</b>
+            </span>
+        </div>
+    </footer>
+    <!--============================ SCROLL UP ============================-->
+    <a href="#" class="scrollUp" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+    <!--============================ FONTAWESOME ICONS ============================-->
+    <script src="https://kit.fontawesome.com/1f21eb1afe.js" crossorigin="anonymous"></script>
+    <!--============================ EMAIL JS ============================-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--============================ SCROLLREVEAL ============================-->
+    <script src="js/scrollreveal.min.js"></script>
+    <!--============================ JQUERY ============================-->
+    <script src="js/jquery.js"></script>
+    <!--============================ MY JS ============================-->
+    <script src="js/script.js"></script>
+</body>
+</html>

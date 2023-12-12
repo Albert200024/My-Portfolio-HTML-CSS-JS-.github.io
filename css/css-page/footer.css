@@ -1,0 +1,43 @@
+.footer {
+    background-color: var(--black-color);
+}
+
+.footerContainer {
+        padding-block: 3rem 2rem;
+        row-gap: 2.5rem;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.footerLink {
+    color: var(--white-color);
+    transition: color .4s;
+}
+
+.footerLink:hover{
+    color: var(--text-color-light);
+}
+
+.footerCopy {
+    text-align: center;
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+}
+
+/*============================== MEDIA ==============================*/
+@media screen and (min-width: 1150px) {
+  .footerContainer {
+     padding-block: 4rem;
+     grid-template-columns: repeat(2, max-content);
+     justify-content: space-between;
+  }
+
+  .footerLinks{
+   column-gap: 3rem;
+   order: 1;
+  }
+}

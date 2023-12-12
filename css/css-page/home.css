@@ -1,0 +1,264 @@
+.home {
+    background-color: var(--body-color);
+}
+
+.homeContainer {
+    padding-top: 20px;
+}
+
+.homeName{
+    font-size: var(--biggest-font-size);
+    text-align: center;
+}
+
+.homePerfil{
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+}
+
+.homeImage{
+    width: 220px;
+}
+
+.homeImg {
+    z-index: 5;
+    position: relative;
+}
+
+.homeImage{
+    position: relative;
+
+}
+
+.homeShadow{
+    width: 100%;
+    height: 100%;
+    background-color: var(--container-color);
+    position: absolute;
+    bottom: -.75rem;
+    right: -.75rem;
+    border: 4px solid var(--black-color);
+    z-index: 2;
+    transition: background-color .4s;
+}
+
+.homeArrow, .homeLine{
+    position: absolute;
+    filter: invert(1);
+    width: 50px;
+    transition: filter .4s;
+}
+
+.homeArrow{
+    left: 40%;
+    bottom: -4rem;
+}
+
+.homeLine{
+    right: -2rem;
+    bottom: -.5rem;
+}
+
+.homePerfil .geometric-box{
+    top: 2.5rem;
+    left: -.7rem;
+    z-index: 10;
+}
+
+.homeSocial{
+    height: max-content;
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.homeSocialLink{
+    background-color: var(--black-color-light);
+    color: var(--white-color);
+    font-size: 1.25rem;
+    display: grid;
+    padding: 6px;
+    place-items: center;
+    transition: background-color .3s;
+}
+
+.homeSocialLink:hover{
+    background-color: var(--black-color);
+}
+
+.homeInfo {
+   margin-top: 4rem;
+}
+
+.homeDescription {
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 1.5rem;
+    margin-top: 45px;
+}
+
+.homeDescription b {
+    background:linear-gradient(90deg, hsla(14, 98%, 50%, .3), hsla(14, 98%, 50%, 0));
+}
+
+.homeScroll {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.homeScrollText {
+    display: none;
+}
+
+.homeScrollBox{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    overflow: hidden;
+    transition: background-color .4s;
+}
+
+.homeScrollBox i {
+    animation: scroll-down 3s infinite;
+}
+
+@keyframes scroll-down{
+    0%{
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(.6rem);
+        opacity: 0;
+    }
+}
+
+/*============================== MEDIA ==============================*/
+@media screen and (max-width: 340px) {
+  .homeImage{
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+   .homeContainer {
+      grid-template-columns: repeat(2, 460px);
+      gap: 2rem 4rem;
+      align-items: center;
+      padding-block: 5.5rem;
+   }   
+
+   .homePerfil{
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+   }
+
+   .homeImage{
+     width: 350px;
+   }
+
+   .homeShadow{
+      right: -1.25rem;
+      bottom: -1.25rem;
+      border: 6px solid var(--black-color);
+   }
+
+   .homeName, .homeDescription {
+      text-align: initial;
+   }
+
+   .homeName{
+    align-self: flex-end;
+   }
+
+   .homeDescription {
+    position: relative;
+    font-size: var(--h2-font-size);
+    margin: 0 0 5.5rem 0;
+    padding-left: 3rem;
+   }
+
+   .homeInfo{
+    margin-top: 0;
+    align-self: flex-start;
+   }
+
+   .homeDescription::after{
+     content: "";
+     width: 32px;
+     height: 2px;
+     background-color: var(--title-color);
+     position: absolute;
+     left: 0;
+     top: 14px;
+   }
+
+   .homeScroll {
+     margin: 0;
+     display: flex;
+     align-items: center;
+     column-gap: .75rem;
+   }
+
+   .homeScrollText {
+      display: block;
+      font-size: 1rem;
+      color: var(--text-color);
+      font-weight: var(--font-medium);
+   }
+
+   .homeScrollBox {
+      width: 44px;
+      height: 44px;
+   }
+
+   .homeScrollBox i {
+      font-size: 1.25rem;
+   }
+
+   .homePerfil .geometric-box {
+      top: 15rem;
+   }
+
+   .homeArrow{
+      top: 4.5rem;
+      left: -8rem;
+      rotate: 80deg;
+      width: 80px;
+   }
+
+   .homeLine{
+      left: -15rem;
+      bottom: 4rem;
+      width: 80px;
+      rotate: 30deg;
+   }
+
+   .homeSocial{
+       left: initial;
+      right: -6rem;
+   }
+
+   .homeSocialLink{
+      font-size: 1.25rem;
+      padding: .5rem;
+   }
+}

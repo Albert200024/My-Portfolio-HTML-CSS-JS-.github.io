@@ -1,0 +1,117 @@
+.services {
+    background-color: var(--body-color);
+}
+
+.servicesContainer {
+    grid-template-columns: 250px;
+    justify-content: center;
+    row-gap: 2rem;
+    padding-top: 1rem;
+}
+
+.servicesCard {
+    position: relative;
+}
+
+.servicesContent {
+    height: 100%;
+    background-color: var(--body-color);
+    border: 4px solid var(--black-color);
+    padding: 6rem 1rem 3rem;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+    transition: background-color .4s, border 4s;
+}
+
+.servicesBorder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid var(--first-color);
+    top: 0;
+    left: 0;
+    transition: transform .4s;
+}
+
+.servicesCard:hover .servicesBorder{
+  transform: translate(.75rem, .75rem);
+}
+
+.servicesIcon {
+    position: relative;
+    display: inline-block;
+}
+
+.servicesIcon i {
+    font-size: 1.5rem;
+    color: var(--black-color);
+    position: relative;
+    z-index: 5;
+}
+
+.servicesBox{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--first-color);
+    right: -2px;
+    top: -2px;
+}
+
+.servicesTitle {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1.10rem;
+    margin-top: 7px;
+}
+
+/*============================== MEDIA ==============================*/
+@media screen and (min-width: 768px) {
+   .servicesContainer {
+     display: flex;
+     flex-wrap: wrap;
+   }   
+
+   .servicesCard {
+      width: 40%;
+   }
+}
+
+
+@media screen and (min-width: 1150px) {
+   .servicesContainer{
+      column-gap: 5rem;
+      padding-block: 3rem 5rem;
+      flex-wrap: wrap;
+   }
+
+   .servicesCard {
+      width: 28%;
+   }
+
+   .servicesContent {
+      padding: 6.5rem 1.5rem 3.5rem;
+      border: 6px solid var(--black-color);
+   }
+
+   .servicesDescription {
+    font-size: 18px
+   }
+
+   .servicesIcon i {
+    font-size: 3rem;
+   }
+
+   .servicesBox {
+      width: 32px;
+      height: 32px;
+   }
+
+   .servicesTitle {
+      margin-bottom:  1.5rem;
+   }
+
+   .servicesCard:hover .servicesBorder{
+     transform: translate(1.25rem, 1.25rem);
+   }  
+}
