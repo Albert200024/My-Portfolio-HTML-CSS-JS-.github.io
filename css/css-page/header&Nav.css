@@ -153,6 +153,7 @@
         padding-block: 1.8rem 5rem;
         text-align: center;
         backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         transition: top .4s;
     }
 }
