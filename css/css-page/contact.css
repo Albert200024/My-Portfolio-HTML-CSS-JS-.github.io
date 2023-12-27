@@ -9,6 +9,18 @@
    row-gap: 0;
 }
 
+input:-webkit-autofill {
+    /* Set the background color */
+    -webkit-box-shadow: 0 0 0 30px rgb(0, 0, 0) inset;
+    transition: background-color border 5000s ease-in-out 0s; /* Adjust the transition duration as needed */
+    -webkit-text-fill-color: white;
+}
+
+/* Override the default autofill background color */
+input:-webkit-autofill:focus {
+    background-color: your-desired-color !important;
+}
+
 .contactData {
     position: relative;
     width: 300px;
