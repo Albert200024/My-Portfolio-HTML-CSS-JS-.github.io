@@ -22,24 +22,26 @@ $(document).ready(function () {
     //=========== Send Email
     const contactForm = $("#contactForm");
     const contactMessage = $("#contactMessage");
-
+    
     const sendEmail = function (e) {
         e.preventDefault();
-
-        emailjs.sendForm("service_34zm49s", "template_9daxw48", "#contactForm", "Min-QW3jlkZnaKDDU")
+    
+        emailjs.sendForm("service_zigg75r", "template_77f4psa", "#contactForm", "73tJrj5bT1MJZqEOQ")
             .then(function () {
                 contactMessage.text("Message sent successfully ✅");
-
+    
                 setTimeout(function () {
                     contactMessage.text("");
                 }, 5000);
-
+    
                 contactForm[0].reset();
-            }, function () {
-                contactMessage.text("Message not sent (services error) ❌");
+            }, function (error) {
+                console.error("EmailJS Error:", error);
+                contactMessage.text("Message not sent (service error) ❌");
             });
     };
-
+    
+    // Attach event listener
     contactForm.submit(sendEmail);
 
     //===========  Show Scroll Up 
